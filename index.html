@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bd3 firebase</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+</body>
+    <!-- SDK DO FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+    
+    <!-- SDK DO FIRESTORE -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+    <!-- CONEXÃO DO FIREBASE -->
+     <!-- dados de conexão com o firebase -->
+    <script>
+        const firebaseConfig = { 
+            apiKey : "AIzaSyB8FuxB-SvgaFTQjfMyUKJDTpSI1gqM_kM" , 
+            authDomain: "bd3-app-libri-kaique.firebaseapp.com",
+            projectId: "bd3-app-libri-kaique",
+            storageBucket: "bd3-app-libri-kaique.appspot.com",
+            messagingSenderId : "735620911790" , 
+            appId : "1:735620911790:web:c1c8d3ae24e085f087933f" 
+          }
+           /* inicializa o firebase */
+           firebase.initializeApp(firebaseConfig);
+
+           /* inicializa o firestore */ 
+           const db = firebase.firestore();
+           
+           console.log(db);
+    </script>
+
+</html>
